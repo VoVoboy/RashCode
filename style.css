@@ -1,0 +1,13 @@
+body{background: #efefef url(images/ga.jpg); margin: 0; padding: 0;
+  font: 16px/24px Arial, Tahoma, sans-serif;}
+a{text-decoration: none;}
+
+/*Структура сайта*/
+div.mid{width: 1000px; margin: 0 auto;}
+div.header{background: #000000;}
+
+/*Шапка сайта*/
+div.topmenu{float: right; heigth: 100px; line-height: 100px;}
+div.topmenu a{margin: 0 0 0 10px; color: #F5F5DC;}
+div.topmenu a:hover{color: #C1CDCD;}
+div.afisha{padding: 20px 50px 0 50px; background: #f2f2f2 url(images/dax.png); top repeat-x;}
