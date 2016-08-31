@@ -1,0 +1,316 @@
+@@ -0,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Digital Clock</title>
+
+
+</head>
+<body>
+<h1>Цепь</h1>
+
+
+<script>
+
+//Начало
+//Установить значение свойства для перехода н новую веб-страницу
+
+//window.location = "http://www.google.com/";
+//window.location = "http://www.google.com";
+//window.location = "http://www.vk.com";
+//window.location = "http://www.huy.com";
+//window.location = "http://www.pizda.com";
+//window.location = "http://www.zopa.com";
+//window.location = "http://www.ebaty-ra.com;"
+//window.location = "http://www.naxuy.ua";
+//window.location = "http://www.v-pizdu.com";
+
+
+//Ждать 2 секунды и вывести диалог с приветствием
+setTimeout(function() { window.location = "http://www.ebaty-ra.com" }, 2000);
+setTimeout(function() { window.location = "http://www.google.com" }, 3000);
+setTimeout(function() { window.location = "http://www.vk.com" }, 4000);
+setTimeout(function() { window.location = "http://www.rider.com" }, 5000);
+setTimeout(function() { window.location = "http://www.baba.com" }, 6000);
+setTimeout(function() { window.location = "http://www.huy.com" }, 7000);
+setTimeout(function() { window.location = "http://www.zopa.com" }, 8000);
+setTimeout(function() { window.location = "http://www.ebaty-ra.com" }, 9000);
+setTimeout(function() { window.location = "http://www.v-rot.com" }, 10000);
+//Отыскать элемент с атрибутом id="timestamp"
+var timestamp = document.getElementById("timestamp");
+var gaga = document.getElementById("gaga");
+var fafa = document.getElementById("fafa");
+var vava = document.getElementById("vava");
+var dada = document.getElementById("dada");
+var tata = document.getElementById("tata");
+var rara = document.getElementById("rara");
+var caca = document.getElementById("caca");
+var zaza = document.getElementById("zaza");
+var qaqa = document.getElementById("qaqa");
+var haha = document.getElementById("haha");
+var kaka = document.getElementById("kaka");
+
+//Если элемент пуст, вставить в него текущую дату и время
+if (timestamp.firstChild == null)
+    timestamp.appendChild(document.createTextNode(new Date().toString()));
+
+if (timestamp.firstChild == null)
+    timestamp.appendChild(document.createTextNode(new Date().toString()));
+
+if (gaga.firstChild == null)
+    gaga.appendChild(document.createTextNode(new Date().toString()));
+
+if (fafa.firstChild == null)
+    fafa.appendChild(document.createTextNode(new Date().toString()));
+
+if (vava.firstChild == null)
+    vava.appendChild(document.createTextNode(new Date().toString()));
+
+if (dada.firstChild == null)
+    dada.appendChild(document.createTextNode(new Date().toString()));
+
+if (tata.firstChild == null)
+    tata.appendChild(document.createTextNode(new Date().toString()));
+
+if (rara.firstChild == null)
+    rara.appendChild(document.createTextNode(new Date().toString()));
+
+if (caca.firstChild == null)
+    caca.appendChild(document.createTextNode(new Date().toString()));
+
+if (zaza.firstChild == null)
+    zaza.appendChild(document.createTextNode(new Date().toString()));
+
+if (qaqa.firstChild == null)
+    qaqa.appendChild(document.createTextNode(new Date().toString()));
+
+if (haha.firstChild == null)
+    haha.appendChild(document.createTextNode(new Date().toString()));
+
+if (kaka.firstChild == null)
+    kaka.createTextNode(document.createTextNode(new Date().toString()));
+
+
+//Явно изменить представление элемента заголовка
+timestamp.style.backgroundColor = "yellow";
+gaga.style.backgroundColor = "green";
+fafa.style.backgroundColor = "red";
+vava.style.backgroundColor = "black";
+dada.style.backgroundColor = "pink";
+tata.style.backgroundColor = "white";
+rara.style.backgroundColor = "brown";
+caca.style.backgroundColor = "gray";
+zaza.style.backgroundColor = "blue";
+qaqa.style.backgroundColor = "purple";
+haha.style.backgroundColor = "orange";
+kaka.style.backgroundColor = "lime";
+
+//Или просто изменить класс и позволить определять особенности
+//визуального представления с помощью каскадных таблиц стилей:
+timestamp.className = "yellow";
+gaga.className = "green";
+fafa.className = "red";
+vava.className = "black";
+dada.className = "pink";
+tata.className = "white";
+rara.className = "brown";
+caca.className = "gray";
+zaza.className = "blue";
+qaqa.className = "purple";
+haha.className = "orange";
+kaka.className = "lime";
+
+
+//Обновить содержимое элемента timestamp, когда пользователь щелкнет на нём
+timestamp.onclick = function() { this.innerHTML = new Date().toString(); }
+gaga.onclick = function() { this.innerHTML = new Date().toString(); }
+fafa.onclick = function() { this.innerHTML = new Date().toString(); }
+vava.onclick = function() { this.innerHTML = new Date().toString(); }
+dada.onclick = function() { this.innerHTML = new Date().toString(); }
+tata.onclick = function() { this.innerHTML = new Date().toString(); }
+rara.onclick = function() { this.innerHTML = new Date().toString(); }
+caca.onclick = function() { this.innerHTML = new Date().toString(); }
+zaza.onclick = function() { this.innerHTML = new Date().toString(); }
+qaqa.onclick = function() { this.innerHTML = new Date().toString(); }
+haha.onclick = function() { this.innerHTML = new Date().toString(); }
+kaka.onclick = function() { this.innerHTML = new Date().toString(); }
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+    /* Стили CSS для этой страницы */
+    .reveal * { display: none; } /* Элементы с атрибутом class="reveal" невидимы */
+    .reveal * .handle { display: block } /* Кроме элементов с class="handle" */
+    </style>
+      <script>
+
+      //Ничего не делать пока документ не будет згружен полностью
+      window.onload = function() {
+
+        //Отыскать все контейнерные элементы с класслом "reveal"
+        var elements = document.getElementByClassName("reveal");
+
+        for (var i=0; i < elements.length; i++) { // Для каждого такого элемента...
+          var elt = elements[i];
+
+          // Отыскать элементы с классом "handle" в контейнере
+          var title = elt.getElementByClassName("handle")[0];
+
+          // После щелчка на этом элементе сделать видимым остальное содержимое
+          addRevealHandler(title, elt);
+        }
+
+        function addRevealHandler(title, elt) {
+          title.onclick = function() {
+            if (elt.className == "reveal") elt.className = "revealed";
+            else if (elt.className == "revealed") elt.className = "reveal";
+          }
+        }
+
+      };
+      </script>
+  </head>
+    <body>
+      <div class = "reveal">
+      <h1 class = "handle">Щелкните здесь, чтобы увидеть скрытый текст</h1>
+      <p>Этот абзац не видим. Он появляется после щелчка на заголовке.</p>
+      </div>
+    </body>
+</html>
+
+// ТАЙМЕРЫ
+setInterval(updateClock, 60000); // Вызывает updateClock() через каждые 60 секунд
+setInterval(updateClock, 40000); // Вызывает updateClock() через каждые 40 секунд
+setInterval(updateClock, 30000); // Вызывает updateClock() через каждые 30 секунд
+setInterval(updateClock, 20000); // Вызывает updateClock() через каждые 20 секунд
+setInterval(updateClock, 10000); // Вызывает updateClock() через каждые 10 секунд
+
+// Вспомагательная функция для работы с таймером
+/*
+ *Планирует вызов или вызовы функции f() в будущем.
+ *Ожидает перед первым вызовом start милисекунд, затем вызывает f()
+ *каждые interval милисекунд и останавливается через start+end милисекунд.
+ *Если аргумент interval указан, а аргумент end нет, повторяющиеся вызовы функции f
+ *никогда не прекратятся. Если отсутствуют оба аргумента, interval и end,
+ *тогда функция f будет вызвана только один раз, через start милисекунд.
+ *Если указан только аргумент f, функция будет вызвана немедленно, как если бы
+ *в агрументе start было передано число 0. обратите внимание, что вызов invoke()
+ *не блокируется: она сразу же возвращает управление.
+ */
+ function invoke(f, start, interval, end) {
+   if (!start) start = 0;            //По умолчанию через 0 мс
+   if (arguments.length <= 2)        //Случай однократного вызова
+      setTimeout(f, start);          //Вызвать 1 раз через start мс.
+    else {                           //Случай многократного вызова
+      setTimeout(repeat, start);     //Начать вызовы через start мс
+      function repead() {            //Планируется на вызов выше
+          var h = setInterval(f, interval);    //Вызвать f через interval мс.
+          //Прекратить вызовы через end мс, если значение end определено
+          if (end) setTimeout(function() { clearInterval(h); }, end);
+
+      }
+    }
+ }
+
+function invoke(f, start, interval, end) {
+  if (!start) start = 0;
+  if (arguments.length <= 2)
+    setTimeout(f, start);
+  else {
+    setTimeout(repeat, start);
+    function repead() {
+      var h = setInterval(f, interval);
+      if (end) setTimeout(function() { clearInterval(h); }, end);
+    }
+  }
+}
+function invoke(f, start, interval, end) {
+  if (!start) start = 0;
+  if (arguments.length <= 2)
+    setTimeout(f, start);
+  else{
+    setTimeout(repeat, start);
+    function repeat() {
+      var h = setInterval(f, interval);
+      if (end) setTimeout(function() { clearInterval(h); }, end);
+    }
+  }
+}
+
+function invoke(f, start, interval, end) {
+  if (!start) start = 0;
+  if (argument.length <= 2)
+    setTimeout(f, start);
+  else {
+    setTimeout(repeat, start);
+    function repeat() {
+      var h = setInterval(f, interval);
+      if (end) setTimeout(function() { clearInterval(h); }, end);
+    }
+  }
+}
+function invoke(f, start, interval, end) {
+  if (!start) start = 0;
+  if (argument.length <= 2)
+    setTimeout(f, start);
+  else {
+    setTimeout(repeat, start);
+    function repeat() {
+      var h = setInterval(f, interval);
+      if (end) setTimeout(function() { clearInterval(h); }, end);
+    }
+  }
+}
+
+//Извлечение аргументов из строки search URL-адреса
+/*
+ *Эта функция выделяет в URL-адресе разделённые амперсантами
+ *пары аргументнов имя/значение из строки запроса. Сохраняет эти пары
+ *в свойствах обьекта и возвращает этот обьект. порядок использоваия:
+ *
+ *var args = urlArgs(); // Извлечь аргументы из URL
+ *var q = args.q || ""; // Использовать аргумент, если определён,
+ *                      // Или значение по умолчанию
+ *var n = args.n ? parsentInt(args.n) : 10;
+ */
+ function urlArgs() {
+   var args = {};                              //Создать пустой обьект
+   var query = location.search.substring(1);   //Строка запроса без '?'
+   var pairs = query.split("&");               //Разбить по амперсантам
+   for (var i = 0; i < pairs.length; i++) {    //Для каждого фрагмента
+     var pos = pairs[i].indexOf('=');          //Отыскать пару имя/значение
+     if (pos == -1) countinue;                 //Не найдено пропустить
+     var name = pairs[i].substring(0, pos);    //Извлечь имя
+     var value = pairs[i].substring(pos+1);    //Извлечь значение
+     value = decodeURIComponent(value);        //Преобразовать значение
+     args[name] = value;                       //Сохранить в виде свойства
+
+   }
+   return args;                                //Вернуть полученные аргументы
+ }
+function urlArgs() {
+  var args = {};
+  var query = location.search.substring(1);
+  var pairs = query.split("&");
+  for (var i = 0; i < pairs.length; i++) {
+    var pos = pairs[i].indexOf('=');
+    if (pos == -1) continue;
+    var name = pairs[i].substring(0, pos);
+    var value = pairs[i].substring(pos+1);
+    value = decodeURIComponent(value);
+    args[name] = value;
+  }
+  return args;
+}
