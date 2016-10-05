@@ -1,0 +1,38 @@
+public class Corb {
+
+
+	double width;
+	double heigth;
+	double depth;
+	
+	double volume() {
+		return width * heigth * depth;
+		
+		
+	}
+
+}
+public class Das {
+
+	public static void main(String[] args) {
+		Corb myCorb = new Corb();
+		Corb myCorb2 = new Corb();
+		double vol;
+		
+		myCorb.width = 10;
+		myCorb.heigth = 20;
+		myCorb.depth = 15;
+		
+		myCorb2.width = 3;
+		myCorb2.heigth = 6;
+		myCorb2.depth = 9;
+		
+		vol = myCorb.volume();
+		System.out.println("־בü¸ל נאגום "+vol);
+		
+		vol = myCorb2.volume();
+		System.out.println("־בü¸ל נאגום "+vol);
+
+	}
+
+}
