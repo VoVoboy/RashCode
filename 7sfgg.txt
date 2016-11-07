@@ -1,0 +1,29 @@
+package ert;
+
+public class RashBrain {
+	int a;
+	public int b;
+	private int c;
+	
+	void setc(int i) {
+		c=i;
+	}
+	int getc() {
+		return c;
+	}
+}
+package ert;
+
+public class Mod {
+	public static void main(String args[]){
+		RashBrain g = new RashBrain();
+		
+		g.a = 10;
+		g.b = 20;
+		
+		//g.c = 100; Ошибка
+		
+		g.setc(100);
+		System.out.println("a, b, и c: " + g.a +" " + g.b + " " + g.getc());
+	}
+}
