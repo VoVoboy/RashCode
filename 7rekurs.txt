@@ -1,0 +1,23 @@
+package ert;
+
+public class RashBrain {
+
+		int fact(int n) {
+			int result;
+			
+			if(n==1) return n = 1;
+			result = fact(n-1) * n;
+			return result;
+		}
+}
+package ert;
+
+public class Recursion {
+	public static void main(String args[]){
+		RashBrain b = new RashBrain();
+		
+		System.out.println("Факториал 3 равен " + b.fact(3));
+		System.out.println("Факториал 4 равен " + b.fact(4));
+		System.out.println("Факториал 5 равен " + b.fact(5));
+	}
+}
